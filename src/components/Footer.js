@@ -1,5 +1,32 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Footer(props) {
-    return <h1>Footer</h1>;
-  }
-  
-  export default Footer;
+  //inline style for the nav tag
+  const navStyle = {
+    display: "flex",
+    justifyContent: "space-around",
+    border: "3px solid black",
+    padding: "8px",
+    width: "90%",
+    margin: "auto",
+  };
+
+  return (
+    <footer>
+      <nav style={navStyle}>
+        <Link to="/">
+          <div>HOME</div>
+        </Link>
+        <Link to="/about">
+          <div>ABOUT</div>
+        </Link>
+        <Link to="/projects">
+          <div>PROJECTS</div>
+        </Link>
+      </nav>
+    </footer>
+  );
+}
+
+export default Footer;
