@@ -1,0 +1,10 @@
+#project-image{
+    width:100%;
+    max-width:1000px;
+    height:100%;
+    max-height:750px;
+}
+html{
+    background-image: url("https://i.pinimg.com/originals/a9/37/1d/a9371d6c6d665198a9a002dc3840d04b.gif"); 
+    background-repeat: repeat;
+}

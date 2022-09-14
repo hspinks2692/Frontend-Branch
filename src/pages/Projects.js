@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './Projects.css'
 
 function Projects(props) {
   // create state to hold projects
@@ -26,7 +27,9 @@ function Projects(props) {
     return projects.map((project) => (
       <div>
         <h1>{project.name}</h1>
-        <img src={project.image} />
+        <div>
+          <img src={project.image} id="project-image"/>
+        </div>
         <a href={project.git}>
           <button>Github</button>
         </a>
