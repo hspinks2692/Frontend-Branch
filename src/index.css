@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+ul{
+  list-style: none;
+}
+
 html{
   color: rgb(139, 215, 233)
 }

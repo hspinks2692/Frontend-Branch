@@ -13,6 +13,7 @@ function Home(props) {
           <li>C#/Unity</li>
           <li>Java</li>
           <li>Python</li>
+          <li>Django</li>
           <li>Visual Basic</li>
         </ul>
         <p>Thank you for visiting my portfolio! I hope you find me a great fit for your team!</p>
