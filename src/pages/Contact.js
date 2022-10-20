@@ -1,4 +1,9 @@
 import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+
+const boxStyle = {
+    backgroundColor: "turqoise"
+}
 
 const ContactUs = () => {
     const form = useRef();
@@ -17,17 +22,19 @@ const ContactUs = () => {
     };
   
     return (
-      <div className='bg-neutral-300 rounded-lg p-1 mt-2'>
-      <form ref={form} onSubmit={sendEmail} className='flex flex-col mt-4 pl-3 pr-3'>
-        <label className='font-bold pb-2' >Name</label>
-        <input type="text" name="user_name" />
-        <label className='font-bold pb-2 pt-2'>Email</label>
-        <input type="email" name="user_email" />
-        <label className='font-bold pb-2 pt-2'>Message</label>
-        <textarea name="message" />
-        <input className='font-bold hover:text-lg pt-2 pb-2'type="submit" value="Send" />
-      </form>
-      </div>
+        <div className='bg-neutral-300 rounded-lg p-1 mt-2'>
+            <div style = {boxStyle}>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col mt-4 pl-3 pr-3'>
+                    <label className='font-bold pb-2' >Name</label><br/>
+                    <input type="text" name="user_name" /><br/>
+                    <label className='font-bold pb-2 pt-2'>Email</label><br/>
+                    <input type="email" name="user_email" /><br/>
+                    <label className='font-bold pb-2 pt-2'>Message</label><br/>
+                    <textarea name="message" /><br/>
+                    <input className='font-bold hover:text-lg pt-2 pb-2'type="submit" value="Send" />
+                </form>
+            </div>
+        </div>
     );
   };
   
