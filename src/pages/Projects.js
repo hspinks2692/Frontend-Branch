@@ -30,6 +30,9 @@ function Projects(props) {
         <div>
           <img src={project.image} id="project-image"/>
         </div>
+        <div>
+          <p>{project.description}</p>
+        </div>
         <a href={project.git} target="_blank">
           <button>Github</button>
         </a>
